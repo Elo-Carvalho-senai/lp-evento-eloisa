@@ -1,4 +1,25 @@
+import Cabecalho from './components/Cabecalho'
+import Hero from './components/Hero'
+import Sobre from './components/Sobre'
+import Programacao from './components/Programacao'
+import Atracoes from './components/Atracoes'
+import Inscricao from './components/Inscricao'
+import Rodape from './components/Rodape'
+
 function App() {
-return <h1 className="text-4xl font-bold text-red-600">Minha landing page</h1>
+  return (
+    <>
+      <Cabecalho />
+      <main>
+        <Hero />
+        <Sobre />
+        <Programacao />
+        <Atracoes />
+        <Inscricao />
+      </main>
+      <Rodape />
+    </>
+  )
 }
+
 export default App

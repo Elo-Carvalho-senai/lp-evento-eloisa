@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 @theme {
---color-primaria: #1d4ed8;
---color-destaque: #f59e0b;
---color-fundo: #f8fafc;
+  --color-primaria: #451a03;   /* Marrom Café/Cacau Profundo (Para textos, títulos e seções escuras) */
+  --color-secundaria: #fdf8f2; /* Creme Soft/Trigo (Cor de fundo acolhedora e suave) */
+  --color-destaque: #c2410c;   /* Terracota/Abóbora Assada (Para botões e links de destaque) */
+  --color-variacao: #854d0e;   /* Oliva Dourado/Mostarda (Para detalhes, etiquetas e bordas) */
+  --color-fundo: #ffffff;
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
