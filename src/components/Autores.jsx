@@ -1,12 +1,20 @@
+
 import { autores } from '../data/evento'
+import CartaoAutor from './CartaoAutor'
+
 function Autores() {
-    return (
-        <ul>
-            {autores.map((autor) => (
-                <CartaoAutor key={autor.nome} nome={autor.nome} genero={autor.genero} />
-            ))}
-        </ul>
-    )
+  return (
+    <ul className="grid gap-4">
+      {autores.map((autor) => (
+        <li key={autor.nome}>
+          <CartaoAutor
+            nome={autor.nome}
+            genero={autor.genero}
+          />
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 export default Autores

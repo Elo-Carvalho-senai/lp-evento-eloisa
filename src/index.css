@@ -1,13 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primaria: #451a03;   /* Marrom Café/Cacau Profundo (Para textos, títulos e seções escuras) */
-  --color-secundaria: #fdf8f2; /* Creme Soft/Trigo (Cor de fundo acolhedora e suave) */
-  --color-destaque: #c2410c;   /* Terracota/Abóbora Assada (Para botões e links de destaque) */
-  --color-variacao: #854d0e;   /* Oliva Dourado/Mostarda (Para detalhes, etiquetas e bordas) */
+  --color-primaria: #451a03;
+  --color-secundaria: #fdf8f2;
+  --color-destaque: #c2410c;
+  --color-variacao: #854d0e;
   --color-fundo: #ffffff;
 }
 
+/* Indicador de foco para navegação pelo teclado */
+:focus-visible {
+  outline: 3px solid var(--color-destaque);
+  outline-offset: 3px;
+}
+
+/* Rolagem suave */
 html {
   scroll-behavior: smooth;
+}
+
+/* Respeita quem prefere movimentos reduzidos */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
